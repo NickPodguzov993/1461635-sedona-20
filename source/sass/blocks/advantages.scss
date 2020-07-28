@@ -1,0 +1,32 @@
+.advantages-container {
+  background-color: $primary-color;
+  color: $white;
+}
+
+.advantages__item {
+  list-style: none;
+  background-color: $secondary-color;
+}
+
+.advantages__sublist {
+  background-color: $secondary-color;
+}
+
+.advantages__item--apartment {
+  background-image: url(../img/icon-house.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.advantages__item--souvenirs {
+  background-image: url(../img/icon-gift.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.advantages__item--food {
+  background-image: url(../img/icon-burger.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+

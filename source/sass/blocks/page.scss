@@ -1,0 +1,12 @@
+.page {
+  height: 100%;
+  font-size: 18px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  line-height: 26px;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  color: $black;
+}

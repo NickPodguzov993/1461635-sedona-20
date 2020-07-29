@@ -3,10 +3,6 @@
 }
 
 .site-list {
-  list-style: none;
-
-  a {
-    text-decoration: none;
-  }
+  @include list-reset(none, 0, 0);
 }
 

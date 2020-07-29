@@ -1,32 +1,26 @@
-.advantages-container {
+.advantages__container {
   background-color: $primary-color;
   color: $white;
 }
 
 .advantages__item {
-  list-style: none;
   background-color: $secondary-color;
+  @include list-reset(none, 0, 0);
+  &--apartment {
+    background-image: url(../img/icon-house.svg);
+  }
+  &--souvenirs {
+    background-image: url(../img/icon-gift.svg);
+  }
+  &--food {
+    background-image: url(../img/icon-burger.svg);
+  }
 }
 
 .advantages__sublist {
-  background-color: $secondary-color;
+  background-color: $white;
+  .advantages__item {
+    background-color: $white;
+    background-repeat: no-repeat;
+  }
 }
-
-.advantages__item--apartment {
-  background-image: url(../img/icon-house.svg);
-  background-repeat: no-repeat;
-  background-position: left;
-}
-
-.advantages__item--souvenirs {
-  background-image: url(../img/icon-gift.svg);
-  background-repeat: no-repeat;
-  background-position: left;
-}
-
-.advantages__item--food {
-  background-image: url(../img/icon-burger.svg);
-  background-repeat: no-repeat;
-  background-position: left;
-}
-

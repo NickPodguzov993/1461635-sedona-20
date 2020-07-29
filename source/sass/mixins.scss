@@ -1,1 +1,12 @@
+@mixin font-set($size, $line-height, $weight:null) {
+font-size: $size;
+line-height: $line-height;
+font-weight: $weight;
+}
 
+@mixin list-reset($margin, $padding, $list-style) {
+margin: $margin;
+padding: $padding;
+list-style: none;
+
+}

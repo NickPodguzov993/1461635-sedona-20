@@ -1,0 +1,4 @@
+.photos__list {
+  @include list-reset(none, 0, 0);
+  @include font-set(14px, 24px)
+}

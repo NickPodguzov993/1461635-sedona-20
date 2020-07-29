@@ -1,6 +1,10 @@
+button {
+  padding: 0;
+}
+
 .btn {
-  text-decoration: none;
   color: $white;
   background-color: $primary-color;
   border: none;
+  @include font-set(21px, 26px);
 }

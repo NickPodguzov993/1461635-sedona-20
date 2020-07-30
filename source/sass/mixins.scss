@@ -4,9 +4,8 @@ line-height: $line-height;
 font-weight: $weight;
 }
 
-@mixin list-reset($margin, $padding, $list-style) {
-margin: $margin;
-padding: $padding;
+@mixin list-reset() {
+margin: 0;
+padding: 0;
 list-style: none;
-
 }

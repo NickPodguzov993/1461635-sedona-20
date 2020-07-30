@@ -3,6 +3,5 @@
 }
 
 .site-list {
-  @include list-reset(none, 0, 0);
+  @include list-reset();
 }
-

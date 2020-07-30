@@ -5,7 +5,7 @@
 
 .advantages__item {
   background-color: $secondary-color;
-  @include list-reset(none, 0, 0);
+  @include list-reset();
   &--apartment {
     background-image: url(../img/icon-house.svg);
   }

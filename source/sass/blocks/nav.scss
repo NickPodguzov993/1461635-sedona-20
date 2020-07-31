@@ -1,0 +1,7 @@
+.main-nav {
+  background-color: $primary-color;
+}
+
+.site-list {
+  @include list-reset();
+}

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -45,11 +46,11 @@
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ol class="advantages__list">
          <li class="advantages__item">
-          <div class="advantages-container">
+          <div class="advantages__container">
           <h3 class="advantages__title">Настоящий городок</h3>
           <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-          <img src="#" alt="#" class="advantages-container__image">
+          <img src="img/main-city-mobile@1x.jpg" alt="#" class="advantages-container__image">
           <ul class="advantages__sublist">
             <li class="advantages__item advantages__item--apartment">
               <h4 class="advantages__title">Жилье</h4>
@@ -66,9 +67,11 @@
           </ul>
         </li>
         <li class="advantages__item--bridge advantages__item">
-          <h3 class="advantages__title">Там есть Мост дьявола</h3>
-          <p>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          <img src="#" alt="#" class="advantages-__image">
+          <div class="advantages__container">
+            <h3 class="advantages__title">Там есть Мост дьявола</h3>
+            <p>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
+          <img src="img/main-bridge-mobile@1x.jpg" alt="#" class="advantages-__image">
           </li>
             <li class="advantages__item">
               <h3 class="advantages__title">Небольшая площадь</h3>
@@ -90,21 +93,21 @@
         <a href="#" class="search-apartment__btn btn">Найти гостиницу</a>
       </div>
       <div class="map">
-        <img src="#" alt="США, Аризона, Седона">
+        <img src="img/bg-map-mobile@1x.jpg" alt="США, Аризона, Седона">
       </div>
     </main>
     <footer class="page-footer">
       <b class="page-footer__hashtag hashtag">#visitSEDONA</b>
       <div class="page-footer__social social">
         <ul class="social__list">
-          <li class="social__item"><a class="social__link social__link--twitter" href="#">Мы в Твиттере</a></li>
-          <li class="social__item"><a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a></li>
-          <li class="social__item"><a class="social__link social__link--youtube" href="#">Мы на Ютубе</a></li>
+          <li class="social__item"><a class="social__link social__link--twitter" href="#" aria-label="Мы в Твиттере">Мы в Твиттере</a></li>
+          <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке"></a></li>
+          <li class="social__item"><a class="social__link social__link--youtube" href="#" aria-label="Мы на Ютубе"></a></li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
       </div>
     </footer>
   </body>

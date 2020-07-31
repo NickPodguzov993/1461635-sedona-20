@@ -1,0 +1,4 @@
+.page {
+  font-family: $font-family;
+  @include font-set(18px, 26px);
+}

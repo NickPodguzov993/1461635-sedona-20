@@ -1,4 +1,6 @@
 .page {
+  height: 100%;
   font-family: $font-family;
-  @include font-set(18px, 26px);
+  @include font-set(16px, 26px);
+  min-width: 320px;
 }

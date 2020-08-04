@@ -1,0 +1,39 @@
+.page-footer__hashtag {
+  @include font-set(21px, 26px);
+  display: block;
+  margin-top: 38px;
+}
+
+.social__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 46px;
+}
+
+.social__item {
+  width: 46px;
+  height: 48px;
+  background-color: $primary-color;
+  margin-left: 6px;
+  margin-bottom: 46px;
+  margin-top: 33px;
+}
+
+.copyright__text {
+  padding-bottom: 26px;
+}
+
+
+  @media (min-width: $tablet-width) {
+    .page-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .page-footer__hashtag {
+    margin-top: 48px;
+  }
+  .page-footer__copyright {
+    margin-top: 48px;
+  }
+  }
+

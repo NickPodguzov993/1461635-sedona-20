@@ -1,6 +1,8 @@
 .review-form__item {
   border: none;
- .review-form__wrapper, .review-form__list {
-   @include list-reset();
- }
+
+  .review-form__wrapper,
+  .review-form__list {
+    @include list-reset();
+  }
 }

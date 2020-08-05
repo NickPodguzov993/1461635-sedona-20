@@ -21,7 +21,8 @@
 .advantages__sublist {
   background-color: $white;
   padding: 0;
-  @media (min-width: $tablet-width){
+
+  @media (min-width: $tablet-width) {
     display: flex;
     padding-top: 158px;
     padding-bottom: 59px;
@@ -44,19 +45,20 @@
 }
 
 .searsh-apartments__title {
-    @include font-set(21px, 26px);
-  }
+  @include font-set(21px, 26px);
+}
 
 @media (min-width: $tablet-width) {
   .advantages__wrapper {
     display: flex;
 
     &--bridge {
-    flex-direction: row-reverse;
-  }
-  &--list {
-   height: 256px;
-  }
+      flex-direction: row-reverse;
+    }
+
+    &--list {
+      height: 256px;
+    }
   }
 
   .advantages__container {
@@ -71,12 +73,14 @@
 }
 
 @media (min-width: $desktop-width) {
-.advantages__container {
+  .advantages__container {
     width: 400px;
   }
+
   .advantages__wrapper--list {
     padding-top: 43px;
   }
+
   .advantages__item--wrapper {
     padding: 0 43px;
   }

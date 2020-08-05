@@ -24,16 +24,17 @@
 }
 
 
-  @media (min-width: $tablet-width) {
-    .page-footer {
+@media (min-width: $tablet-width) {
+  .page-footer {
     display: flex;
     justify-content: space-between;
   }
+
   .page-footer__hashtag {
     margin-top: 48px;
   }
+
   .page-footer__copyright {
     margin-top: 48px;
   }
-  }
-
+}

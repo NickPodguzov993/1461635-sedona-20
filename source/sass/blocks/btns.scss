@@ -6,6 +6,7 @@ button {
   color: $white;
   background-color: $primary-color;
   border: none;
+
   @include font-set(21px, 26px);
 }
 
@@ -23,14 +24,13 @@ button {
     width: 458px;
     margin-left: 155px;
     margin-bottom: 58px;
-
   }
 }
 
 @media (min-width: $desktop-width) {
-.search-apartment__btn {
-   margin-left: 371px;
- }
+  .search-apartment__btn {
+    margin-left: 371px;
+  }
 }
 
 

@@ -18,20 +18,16 @@
 
     .main-nav__list {
       display: flex;
-      padding-left: 34px;
     }
 
     .site-list__item {
       padding-top: 20px;
       padding-bottom: 20px;
-    }
-
-    .site-list__item:nth-child(2n) {
-      padding-left: 47px;
+      width: 20%;
     }
 
     .site-list__item:nth-child(3n) {
-      padding-left: 189px;
+      margin-left: 20%;
     }
   }
 }

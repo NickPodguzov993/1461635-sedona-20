@@ -38,3 +38,18 @@ button {
   border: none;
   background-color: $white;
 }
+
+.review__btn {
+  width: 280px;
+  height: 58px;
+
+  @media (min-width: $tablet-width) {
+    width: 328px;
+    margin-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+    margin-left: 120px;
+  }
+}

@@ -28,6 +28,7 @@
   .page-footer {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .page-footer__hashtag {

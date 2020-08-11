@@ -2,19 +2,45 @@
   border: none;
   padding-bottom: 43px;
   padding-top: 16px;
+  margin: 0;
 
-  .review-form__wrapper,
-  .review-form__list {
-    @include list-reset();
+
+  &--impression {
+    @media (min-width: $tablet-width) {
+      order: -1;
+      width: 50%;
+      padding: 0;
+      margin: 0;
+    }
   }
+
+  &--emotions {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+  }
+}
+
+.review-form__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 160px;
+    padding-left: 135px;
+  }
+}
+
+.review-form__wrapper,
+.review-form__list {
+  @include list-reset();
 }
 
 .review-form__legend {
   @include font-set(18px, 26px, 700);
 }
 
-.review__label {
-  @include font-set(14px, 26px,);
+.review-form__initials {
+  display: flex;
 }
 
 .review-form__textarea {
@@ -24,56 +50,9 @@
   @include font-set(18px, 26px, 700);
 }
 
-.review__input {
-  padding-left: 22px;
-
-  @include font-set(18px, 26px, 700);
-
-  &--name {
-    width: 230px;
-    height: 58px;
-
-    @media (min-width: $tablet-width) {
-      width: 216px;
-    }
-  }
-
-  &--surname {
-    width: 192px;
-    height: 58px;
-
-    @media (min-width: $tablet-width) {
-      width: 178px;
-    }
-  }
-
-  &--middlename {
-    width: 194px;
-    height: 58px;
-
-    @media (min-width: $tablet-width) {
-      width: 180px;
-    }
-  }
-
-  &--phone {
-    width: 280px;
-    height: 58px;
-  }
-
-  &--mail {
-    width: 280px;
-    height: 58px;
-  }
-}
-
 .review-form__label {
   @include font-set(18px, 26px, 700);
   text-transform: initial;
-}
-
-.review__attractions-item {
-  padding-bottom: 54px;
 }
 
 @media (min-width: $tablet-width) {
@@ -85,78 +64,10 @@
   .review-form__textarea {
     width: 648px;
   }
-
-  .review-form__item {
-    &--impression {
-      order: -1;
-      width: 50%;
-    }
-
-    &--emotions {
-
-      width: 100%;
-    }
-
-    .review__input {
-      display: block;
-
-      &--phone {
-        width: 648px;
-        height: 58px;
-
-        @media (min-width: $desktop-width) {
-          width: 258px;
-        }
-      }
-
-      &--mail {
-        width: 648px;
-        height: 58px;
-
-        @media (min-width: $desktop-width) {
-          width: 258px;
-        }
-      }
-    }
-
-    .review-form__wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      margin-left: 160px;
-    }
-
-    .review__attractions-item {
-      padding-right: 119px;
-    }
-  }
 }
 
 @media (min-width: $desktop-width) {
   .review-form__textarea {
     width: 960px;
-  }
-
-  .review__contacts {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 119px;
-  }
-
-  .review__contacts-mail {
-    padding-left: 302px;
-  }
-}
-
-.review__legend {
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-left: 132px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 287px;
   }
 }

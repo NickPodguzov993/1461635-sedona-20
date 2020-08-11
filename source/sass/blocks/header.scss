@@ -7,15 +7,9 @@
 }
 
 .page-header__logo {
+  width: 102px;
+  height: 84px;
   position: absolute;
-  left: 35%;
-  top: 0;
-
-  @media (min-width: $tablet-width) {
-    left: 45%;
-
-    .page-header__wrapper {
-      height: 0;
-    }
-  }
+  left: 50%;
+  transform: translateX(-50%);
 }

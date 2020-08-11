@@ -31,13 +31,15 @@
 }
 
 .advantages__title {
-  margin-top: 0;
-  font-size: 20px;
-  line-height: 26px;
+
+  margin-top: 32px;
+
+  @include font-set(20px, 26px);
+  margin-bottom: 27px;
 }
 
 .advantages__subtitle {
-  margin-bottom: 0;
+  margin-bottom: 27px;
 }
 
 .searsh-apartments__title {
@@ -65,16 +67,16 @@
   }
 
   .advantages__container {
-    width: 33.33%;
+    width: 33.3334%;
   }
 
   .advantages-container__image {
-    width: 66.66%;
+    width: 66.6667%;
     height: 256px;
   }
 
   .advantages__item--wrapper {
-    width: 33.33%;
+    width: 33.3334%;
   }
 
   .searsh-apartments__title {

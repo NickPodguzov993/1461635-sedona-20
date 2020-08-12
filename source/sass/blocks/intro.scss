@@ -1,0 +1,7 @@
+.intro-text {
+  margin-top: 32px;
+
+  .intro-text__title {
+    @include font-set(18px, 26px);
+  }
+}

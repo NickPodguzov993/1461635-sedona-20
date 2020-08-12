@@ -1,4 +1,15 @@
-.promo {
-  background-image: url(../img/bg-back-mobile@1x.jpg);
-  background-repeat: no-repeat;
+.page-header__wrapper {
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    height: 56px;
+  }
+}
+
+.page-header__logo {
+  width: 102px;
+  height: 84px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }

@@ -1,0 +1,26 @@
+.videos {
+  margin-top: 85px;
+
+  .videos__title {
+    @include font-set(18px, 26px);
+  }
+
+  .videos__discriptions {
+    @include font-set(16px, 24px);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .videos {
+    margin-top: 59px;
+
+    .videos__title {
+      @include font-set(30px, 26px);
+    }
+
+    .videos__video {
+      margin-top: 68px;
+      margin-bottom: 76px;
+    }
+  }
+}

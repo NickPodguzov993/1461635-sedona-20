@@ -9,11 +9,6 @@
   <body class="page__body">
     <div class="container">
     <header class="page-header">
-      <div class="page-header__wrapper">
-      <a class="page-header__logo">
-        <img src="img/sedona-logo.svg" width="102" height="84" alt="Лоотип Sedona">
-      </a>
-      </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -41,27 +36,32 @@
           </li>
         </ul>
       </nav>
-      <div class="promo"><img src="img/text-sedona.svg" alt="Надпись Седона"></div>
+      <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img src="img/sedona-logo.svg" width="102" height="84" alt="Лоотип Sedona">
+      </a>
+      </div>
+      <div class="promo-photo"><img src="img/text-sedona.svg" alt="Надпись Седона"></div>
     </header>
     <section class="review-page">
       <div class="intro-text">
         <h1 class="intro-text__title">Оставьте свой отзыв</h1>
-        <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <p class="intro-text__subtitle">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
       <form class="review__form review-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="review-form__item review-form__item--name">
           <legend  class="review-form__legend">Представьтесь:</legend>
           <p class="review-form__initials">
             <label for="name" class="review__label">Имя*:</label>
-              <input class="review__input" id="name" type="text" name="name" placeholder="Петр">
+              <input class="review__input review__input--name" id="name" type="text" name="name" placeholder="Петр">
           </p>
           <p class="review-form__initials">
             <label for="surname" class="review__label">Фамилия*:</label>
-              <input class="review__input" id="surname" type="text" name="surname" placeholder="Иванов">
+              <input class="review__input review__input--surname" id="surname" type="text" name="surname" placeholder="Иванов">
           </p>
           <p class="review-form__initials">
             <label for="middlename" class="review__label">Отчество:</label>
-              <input class="review__input" id="middlename" type="text" name="name" placeholder="Александрович">
+              <input class="review__input review__input--middlename" id="middlename" type="text" name="name" placeholder="Александрович">
           </p>
         </fieldset>
         <fieldset class="review-form__item review-form__item--contacts">
@@ -81,15 +81,15 @@
         <legend class="review-form__legend">Ваше общее впечатление:</legend>
           <ul class="review-form__list">
             <li class="review-form__item">
-              <input  type="radio" name="impression" value="positive" id="impression-positive" checked>
+              <input class="visually-hidden review-form__radio" type="radio" name="impression" value="positive" id="impression-positive" checked>
               <label for="impression-positive" class="review-form__label">Скорее положительное</label>
             </li>
             <li class="review-form__item">
-              <input type="radio" name="impression" value="negative" id="impression-negative">
+              <input class="visually-hidden review-form__radio" type="radio" name="impression" value="negative" id="impression-negative">
               <label for="impression-negative" class="review-form__label">Скорее отрицательное</label>
             </li>
             <li class="review-form__item">
-              <input type="radio" name="impression" value="difficult" id="impression-difficult">
+              <input class="visually-hidden review-form__radio" type="radio" name="impression" value="difficult" id="impression-difficult">
               <label for="impression-difficult" class="review-form__label">Затрудняюсь ответить</label>
             </li>
             </ul>
@@ -98,19 +98,19 @@
             <legend class="review-form__legend">Посещенные достопримечательности</legend>
             <ul class="review-form__wrapper">
             <li class="review__attractions-item">
-              <input type="checkbox" name="devil-bridge" id="devil-bridge" checked>
-              <label for="мост дьявола" class="review-form__label">Devil-bridge</label>
+              <input class="visually-hidden review-form__checkbox" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+              <label for="мост дьявола" class="review-form__label">Мост Дьявола</label>
             </li>
             <li class="review__attractions-item">
-              <input type="checkbox" name="mount-bell" id="mount" checked>
+              <input class="visually-hidden review-form__checkbox" type="checkbox" name="mount-bell" id="mount" checked>
               <label for="mount" class="review-form__label">Гора-Колокол</label>
             </li>
             <li class="review__attractions-item">
-              <input type="checkbox" name="slide-park" id="slide-park" checked>
+              <input class="visually-hidden review-form__checkbox" type="checkbox" name="slide-park" id="slide-park" checked>
               <label for="slide-park" class="review-form__label">Слайд-парк</label>
             </li>
             <li class="review__attractions-item">
-              <input type="checkbox" name="rocks" id="red-rocks">
+              <input class="visually-hidden review-form__checkbox" type="checkbox" name="rocks" id="red-rocks">
               <label for="red-rocks" class="review-form__label">Красные скалы</label>
             </li>
           </ul>

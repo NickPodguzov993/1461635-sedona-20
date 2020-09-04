@@ -12,4 +12,8 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    top: -57px;
+  }
 }

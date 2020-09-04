@@ -9,11 +9,6 @@
   <body class="page__body">
     <div class="container">
     <header class="page-header">
-      <div class="page-header__wrapper">
-      <a class="page-header__logo">
-        <img src="img/sedona-logo.svg" width="102" height="84" alt="Лоотип Sedona">
-      </a>
-    </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -41,26 +36,32 @@
             </li>
           </ul>
       </nav>
-      <div class="promo"><img src="img/text-sedona.svg" alt="Надпись Седона"></div>
+      <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img src="img/sedona-logo.svg" width="102" height="84" alt="Лоотип Sedona">
+      </a>
+    </div>
+      <div class="promo-photo"><img src="img/text-sedona.svg" alt="Надпись Седона"></div>
     </header>
     <section class="photo-page">
       <div class="intro-text"><h1 class="intro-text__title">Фото и видео</h1>
-        <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <p class="intro-text__subtitle">Не можете решиться на путешествие из-за курса?<br> Фотографии помогут вам забыть о политике и экономике.</p>
       </div>
       <section class="photos">
         <ul class="photos__list">
-          <li class="photos__item"><img src="img/photo-sunset-mobile@1x.jpg" alt="Просторы">
+          <li class="photos__item photos__item--big"><img src="img/photo-sunset-mobile@1x.jpg" alt="Просторы" width="280"
+            height="280">
           <div class="photo-item__footer">
             <div class="photo-item__wrapper"><h2 class="photos__descriptions">Неродные просторы</h2>
-            <p class="photos__author">Автор фото:Борис</p>
+            <p class="photos__author">Автор фото: Борис</p>
           </div>
             <button class="photo-item__like">
             <span class="photos-item__counter">1350</span>
             </button>
           </div>
           </li>
-          <div class="photos-item__container">
-            <li class="photos__item photos__item--flex"><img src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность">
+            <li class="photos__item "><img src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность" width="280"
+            height="280">
             <div class="photo-item__footer">
             <div class="photo-item__wrapper"><h2 class="photos__descriptions">Местная растительность</h2>
             <p class="photos__author">Автор фото:Сергей</p>
@@ -70,7 +71,8 @@
             </button>
           </div>
           </li>
-          <li class="photos__item photos__item--flex"><img src="img/photo-roads-mobile@1x.jpg" alt="Дорога">
+          <li class="photos__item"><img src="img/photo-roads-mobile@1x.jpg" alt="Дорога" width="280"
+            height="280">
             <div class="photo-item__footer">
             <div class="photo-item__wrapper">
               <h2 class="photos__descriptions">Дорога на север</h2>
@@ -81,7 +83,8 @@
             </button>
           </div>
           </li>
-          <li class="photos__item photos__item--flex"><img src="img/photo-bridge-mobile@1x.jpg" alt="Мост">
+          <li class="photos__item"><img src="img/photo-bridge-mobile@1x.jpg" alt="Мост" width="280"
+            height="280">
             <div class="photo-item__footer">
               <div class="photo-item__wrapper">
                 <h2 class="photos__descriptions">Мост дьявола</h2>
@@ -92,28 +95,32 @@
               </button>
             </div>
           </li>
-        </div>
         </ul>
         <div class="videos">
           <b class="videos__title">Все еще сомневаетесь?</b>
           <p class="videos__descriptions">Смотрите видео презентацию и<br>скорее за билетами,пока они не<br>подорожали в очередной раз!
           </p>
-          <div class="videos__video">Здесь будет видео</div>
+          <div class="videos__video"><img src="img/video-mobile@1x.jpg" alt="Видео" width="320" height="201">
+            <div class="videos__scroll">
+              <div class="videos__scale"></div>
+            </div>
+            <div class="videos__options">
+              <div class="videos__fullscreen"></div>
+            </div>
+          </div>
         </div>
       </section>
     </section>
-    <footer class="page-footer">
-      <b class="page-footer__hashtag hashtag">#visitSEDONA</b>
-      <div class="page-footer__social social">
+     <footer class="page-footer">
+        <b class="page-footer__hashtag hashtag">#visitSEDONA</b>
         <ul class="social__list">
           <li class="social__item"><a class="social__link social__link--twitter" href="#" aria-label="Мы в Твиттере"></a></li>
           <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке"></a></li>
           <li class="social__item"><a class="social__link social__link--youtube" href="#" aria-label="Мы на Ютубе"></a></li>
         </ul>
-      </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
       </div>
     </footer>
     </div>

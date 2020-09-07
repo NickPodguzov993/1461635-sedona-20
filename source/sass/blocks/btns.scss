@@ -6,5 +6,50 @@ button {
   color: $white;
   background-color: $primary-color;
   border: none;
+
   @include font-set(21px, 26px);
+}
+
+.search-apartment__btn {
+  display: block;
+  width: 280px;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  margin-left: 20px;
+  margin-bottom: 49px;
+}
+
+@media (min-width: $tablet-width) {
+  .search-apartment__btn {
+    width: 458px;
+    margin-left: 155px;
+    margin-bottom: 58px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .search-apartment__btn {
+    margin-left: 371px;
+  }
+}
+
+
+.photo-item__like {
+  border: none;
+  background-color: $white;
+}
+
+.review__btn {
+  width: 280px;
+  height: 58px;
+
+  @media (min-width: $tablet-width) {
+    width: 328px;
+    margin-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+    margin-left: 120px;
+  }
 }

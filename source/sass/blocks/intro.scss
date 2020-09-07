@@ -1,0 +1,16 @@
+.intro-text {
+  margin-top: 32px;
+  padding-bottom: 0px;
+
+  .intro-text__title {
+    @include font-set(18px, 26px);
+  }
+}
+
+.intro-text__subtitle {
+  @include font-set(14px, 26px);
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-right: 20px;
+  padding-bottom: 8px;
+}

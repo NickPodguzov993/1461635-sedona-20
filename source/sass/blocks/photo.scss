@@ -28,8 +28,19 @@
 }
 
 .photo-item__like {
+
+  @media (max-width: $mobile-width-only) {
   margin-right: 175px;
-  margin-bottom: 42px; ;
+}
+  margin-bottom: 42px;
+  margin-right: 55px;
+  background-color: #EAEAEA;
+  @include font-set(14px, 24px, 700);
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+    color: $white;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -62,6 +73,18 @@
   .photo-item__footer {
     display: flex;
     justify-content: space-between;
+
+    @media (min-width: $tablet-width) {
+      background-color: #EAEAEA;
+      position: relative;
+      margin-top: -7px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-color: rgba( 0, 0, 0, 0.3);
+      color: $white;
+      margin-top: -73px;
+    }
   }
 }
 

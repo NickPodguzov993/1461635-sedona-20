@@ -1,0 +1,15 @@
+.searsh-apartments__wrapper {
+  margin-top: 50px;
+}
+
+.searsh-apartments__subtitle {
+  @include font-set(14px, 23px);
+
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  padding: 10px 20px 17px;
+}

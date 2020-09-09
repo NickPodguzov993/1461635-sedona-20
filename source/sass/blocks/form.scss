@@ -19,14 +19,18 @@
       width: 100%;
     }
   }
+
+  &--attractions {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+  }
 }
 
 .review-form__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    padding-right: 160px;
-    padding-left: 135px;
   }
 }
 
@@ -37,6 +41,8 @@
 
 .review-form__legend {
   @include font-set(18px, 26px, 700);
+
+  padding-top: 15px;
 }
 
 .review-form__initials {

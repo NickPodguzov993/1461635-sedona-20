@@ -36,7 +36,7 @@
           </li>
         </ul>
       </nav>
-      <div class="page-header__wrapper">
+      <div class="page-header__wrapper page-header__wrapper--photo-form">
       <a class="page-header__logo">
         <img src="img/sedona-logo.svg" width="102" height="84" alt="Лоотип Sedona">
       </a>
@@ -67,7 +67,7 @@
         <fieldset class="review-form__item review-form__item--contacts">
           <legend class="review-form__legend">Контактная информация:</legend>
           <div class="review__contacts">
-            <p>
+            <p class="review__contacts-phone">
             <label for="mail" class="review__label">Контактный телефон*:</label>
               <input class="review__input review__input--phone" id="tel" type="tel" name="phone" placeholder="Введите телефон">
           </p>
@@ -136,6 +136,16 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </div>
       </footer>
+      <section class="modal modal__error">
+        <h2>Что то пошло не так!</h2>
+        <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button>Ок</button>
+      </section>
+      <section class="modal modal__success">
+        <h2>Ваш отзыв отправлен!</h2>
+        <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <button>Закрыть окно</button>
+      </section>
       </div>
     </body>
   </html>

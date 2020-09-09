@@ -4,6 +4,12 @@
 
 .searsh-apartments__subtitle {
   @include font-set(14px, 23px);
-  padding-top: 10px;
-  padding-bottom: 17px;
+
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  padding: 10px 20px 17px;
 }

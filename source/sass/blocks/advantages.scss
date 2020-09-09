@@ -7,6 +7,7 @@
 .advantages__list {
   padding: 0;
   margin: 0;
+  counter-reset: advantages-count;
 }
 
 .advantages__subtitle {
@@ -14,18 +15,35 @@
 
   @include font-set(14px, 26px);
 
+  &::before {
+    counter-increment: advantages-count;
+    content: "— №" counter(advantages-count) " —";
+    display: block;
+    padding-bottom: 10px;
+  }
 
   &--reason {
     padding-top: 14px;
     padding-bottom: 33px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
   }
 
   &--reasons {
-    padding-bottom: 28px;
+    padding: 0 20px 28px;
+
+    @include font-set(14px, 26px);
   }
 
   &--bridge {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+    @media (min-width: $tablet-width) {
+      padding-left: 51px;
+      padding-right: 51px;
+    }
   }
 
   &--area {
@@ -36,11 +54,26 @@
   &--roads {
     margin: 0;
     padding-top: 45px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   &--tourist {
     margin: 0;
     padding-top: 45px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+  }
+
+  &--sublist {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  &--area {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
@@ -81,32 +114,58 @@
   margin-top: 30px;
   margin-right: 4px;
   margin-bottom: 31px;
+  padding: 0 25px;
 
   @include font-set(18px, 26px);
+
+  &--first {
+    @media (min-width: $tablet-width) {
+      padding-left: 125px;
+      padding-right: 125px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 325px;
+      padding-right: 325px;
+    }
+  }
 
   &--sublist {
     margin-top: 29px;
     margin-bottom: 16px;
   }
 
+  &--city {
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
   &--bridge {
     margin-top: 15px;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
+
+     @media (min-width: $tablet-width) {
+      padding-left: 51px;
+      padding-right: 51px;
+     }
+
+
   }
 
   &--area {
     margin: 0;
-    padding-top: 20px;
+    padding: 45px 50px 20px;
   }
 
   &--roads {
     margin: 0;
-    padding-top: 45px;
+    padding: 45px 50px 20px;
+
   }
 
   &--tourist {
     margin: 0;
-    padding-top: 45px;
+    padding: 45px 50px 20px;
   }
 
     @media (min-width: $tablet-width) {
@@ -185,4 +244,10 @@
   .advantages__item--wrapper {
     padding: 0 43px;
   }
+}
+
+@media (max-width: $mobile-width-only) {
+ .advantages-container__image {
+  display: block;
+ }
 }

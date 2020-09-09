@@ -67,6 +67,7 @@
     width: 27px;
     height: 35px;
     background-image: url(../img/logo-htmlacademy.svg);
+    background-repeat: no-repeat;
     right: 0;
   }
 }
@@ -77,6 +78,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0 45px;
   }
 
   .page-footer__hashtag {

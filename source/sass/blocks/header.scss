@@ -100,7 +100,17 @@
   left: 50%;
   transform: translateX(-50%);
 
+img {
+  width: 100%;
+}
+
   @media (min-width: $tablet-width) {
     top: -57px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 186px;
+    height: 96px;
+  }
 }
+

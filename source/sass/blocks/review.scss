@@ -1,3 +1,13 @@
+.review-page {
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+
+    @media (min-width: $desktop-width) {
+      padding: 0 30px;
+    }
+  }
+}
+
 .review__attractions-item {
   padding-bottom: 54px;
 

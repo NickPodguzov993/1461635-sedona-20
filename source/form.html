@@ -38,7 +38,10 @@
       </nav>
       <div class="page-header__wrapper page-header__wrapper--photo-form">
       <a class="page-header__logo">
-        <img src="img/sedona-logo.svg" width="102" height="84" alt="Лоотип Sedona">
+        <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg"><img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Лоотип Sedona">
+          </picture>
       </a>
       </div>
       <div class="promo-photo"><img src="img/text-sedona.svg" alt="Надпись Седона"></div>
@@ -122,6 +125,7 @@
         <button type="submit" class="review__btn btn">Отправить отзыв</button>
         <legend class= "review__legend">* - Обязательные поля</legend>
       </form>
+    </section>
       <footer class="page-footer">
         <b class="page-footer__hashtag hashtag">#visitsedona</b>
         <div class="page-footer__social social">

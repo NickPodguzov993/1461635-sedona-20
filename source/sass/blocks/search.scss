@@ -1,5 +1,9 @@
 .searsh-apartments__wrapper {
   margin-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .searsh-apartments__subtitle {
@@ -10,6 +14,10 @@
       display: none;
     }
   }
-
   padding: 10px 20px 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 24px;
+  }
 }

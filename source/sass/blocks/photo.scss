@@ -34,11 +34,10 @@
 }
   margin-bottom: 42px;
   margin-right: 55px;
-  background-color: #EAEAEA;
+  background-color: transparent ;
   @include font-set(14px, 24px, 700);
 
   @media (min-width: $desktop-width) {
-    background-color: transparent;
     color: $white;
   }
 }
@@ -113,5 +112,16 @@
 
    .photos__item--big {
     width: 100%;
+  }
+}
+
+.photo-item__icon {
+  width: 23px;
+  height: 21px;
+  fill: rgba(0, 0, 0, 0.3);
+  margin-right: 9px;
+
+  @media (min-width: $desktop-width) {
+    fill: $white;
   }
 }

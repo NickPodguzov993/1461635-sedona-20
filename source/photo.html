@@ -56,8 +56,7 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
-                <source media="(min-width: 320px)" srcset="img/photo-sunset-mobile@2x.jpg 2x">
-              <img src="img/photo-sunset-mobile@1x.jpg" alt="Просторы" width="280"
+              <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Просторы" width="280"
             height="280">
             </picture>
           <div class="photo-item__footer">
@@ -65,6 +64,9 @@
             <p class="photos__author">Автор фото: Борис</p>
           </div>
             <button class="photo-item__like">
+              <svg class="photo-item__icon">
+                <use xlink:href="img/sprite.svg#like">
+              </svg>
             <span class="photos-item__counter">1350</span>
             </button>
           </div>
@@ -72,15 +74,16 @@
             <li class="photos__item "><picture>
               <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
-              <source media="(min-width: 320px)" srcset="img/photo-cactus-mobile@2x.jpg 2x">
-              <img src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность" width="280"
+              <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность" width="280"
             height="280">
             </picture>
             <div class="photo-item__footer">
             <div class="photo-item__wrapper"><h2 class="photos__descriptions">Местная растительность</h2>
             <p class="photos__author">Автор фото:Сергей</p>
           </div>
-            <button class="photo-item__like">
+            <button class="photo-item__like"><svg class="photo-item__icon">
+                <use xlink:href="img/sprite.svg#like">
+              </svg>
               <span class="photos-item__counter">143</span>
             </button>
           </div>
@@ -88,8 +91,7 @@
           <li class="photos__item"><picture>
               <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
-               <source media="(min-width: 320px)" srcset="img/photo-roads-mobile@2x.jpg 2x">
-              <img src="img/photo-roads-mobile@1x.jpg" alt="Дорога" width="280"
+              <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога" width="280"
             height="280">
             </picture>
             <div class="photo-item__footer">
@@ -97,7 +99,9 @@
               <h2 class="photos__descriptions">Дорога на север</h2>
             <p class="photos__author">Автор фото:Петр</p>
           </div>
-            <button class="photo-item__like">
+            <button class="photo-item__like"><svg class="photo-item__icon">
+                <use xlink:href="img/sprite.svg#like">
+              </svg>
             <span class="photos-item__counter">96</span>
             </button>
           </div>
@@ -105,8 +109,7 @@
           <li class="photos__item"><picture>
               <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-                 <source media="(min-width: 320px)" srcset="img/photo-bridge-mobile@2x.jpg 2x">
-              <img src="img/photo-bridge-mobile@1x.jpg" alt="Мост" width="280"
+              <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост" width="280"
             height="280">
             </picture>
             <div class="photo-item__footer">
@@ -114,7 +117,9 @@
                 <h2 class="photos__descriptions">Мост дьявола</h2>
               <p class="photos__author">Автор фото:Антон</p>
             </div>
-              <button class="photo-item__like">
+              <button class="photo-item__like"><svg class="photo-item__icon">
+                <use xlink:href="img/sprite.svg#like">
+              </svg>
                 <span class="photos-item__counter">254</span>
               </button>
             </div>
@@ -128,20 +133,16 @@
             <div class="video__image-poster"><picture>
               <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-                 <source media="(min-width: 320px)" srcset="img/video-mobile@2x.jpg 2x">
-              <img src="img/video-mobile@1x.jpg" alt="Видео" width="320" height="201">
+              <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео" width="320" height="201">
             </picture></div>
             <div class="video__controls">
-             <div class="video__scroll-bar"></div>
-              <div class="video__control-buttons">
               <button class="video__button video__button--replay"><img src="img/icon-video-replay.svg"></button>
+              <div class="video__scroll-bar"></div>
               <button class="video__button video__button--subtitles"><img src="img/icon-video-subtitles.svg"></button>
               <button class="video__button video__button--fullscreen"><img src="img/icon-video-fullscreen.svg" alt=""></button>
             </div>
-
             </div>
           </div>
-        </div>
       </section>
     </section>
      <footer class="page-footer">

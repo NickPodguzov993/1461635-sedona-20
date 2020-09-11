@@ -44,7 +44,8 @@
   }
 
   &--bridge {
-  padding-bottom: 30px;
+    padding-bottom: 30px;
+
     @media (min-width: $tablet-width) {
       padding-left: 51px;
       padding-right: 51px;
@@ -106,6 +107,7 @@
 
 .advantages__item {
   @include list-reset();
+  position: relative;
 
   @media (min-width: $tablet-width) {
   width: 33.3334%;
@@ -161,7 +163,6 @@
   &--sublist {
     margin-top: 30px;
     margin-bottom: 16px;
-
 
     @media (min-width: $tablet-width) {
       margin-top: 40px;
@@ -320,5 +321,54 @@
 .advantages__title--souvenirs {
   @media (min-width: $tablet-width) {
     padding-left: 78px;
+  }
+}
+
+.advantages__icon {
+  fill: $primary-color;
+  display: block;
+  position: absolute;
+
+  &--house {
+    left: -24px;
+    bottom: 73px;
+    width: 39px;
+    height: 37px;
+
+    @media (min-width: $tablet-width) {
+      width: 75px;
+      height: 72px;
+      left: 80px;
+      bottom: 173px;
+    }
+
+  }
+
+  &--gift {
+    left: -24px;
+    bottom: 53px;
+    width: 39px;
+    height: 37px;
+
+    @media (min-width: $tablet-width){
+      width: 64px;
+      height: 75px;
+      left: 80px;
+      bottom: 173px;
+    }
+  }
+
+  &--food {
+    width: 39px;
+    height: 37px;
+    left: -27px;
+    bottom: 73px;
+
+    @media (min-width: $tablet-width){
+      width: 76px;
+      height: 68px;
+      left: 80px;
+      bottom: 173px;
+    }
   }
 }

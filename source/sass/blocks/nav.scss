@@ -1,7 +1,7 @@
 .main-nav {
   background-color: $primary-color;
   position: relative;
-   @include font-set(18px, 30px);
+  @include font-set(18px, 30px);
 }
 
   @media (max-width: $mobile-width-only) {
@@ -13,16 +13,16 @@
     }
 
     .main-nav__toggle {
-       position: absolute;
-       top: 220px;
-       right: 0;
-       z-index: 2;
-       display: block;
-       width: 70px;
-       height: 50px;
-       background-color: $white;
-       cursor: pointer;
-       border: none;
+      position: absolute;
+      top: 220px;
+      right: 0;
+      z-index: 2;
+      display: block;
+      width: 70px;
+      height: 50px;
+      background-color: $white;
+      cursor: pointer;
+      border: none;
     }
 
     .main-nav--closed .main-nav__toggle::before {
@@ -61,9 +61,9 @@
   &::after {
     transform: rotate(-45deg);
   }
- }
+}
 
- .main-nav__toggle {
+.main-nav__toggle {
     display: none;
   }
 }

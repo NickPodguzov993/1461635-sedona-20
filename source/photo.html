@@ -125,10 +125,10 @@
             </div>
           </li>
         </ul>
-        <div class="videos">
-          <b class="videos__title">Все еще сомневаетесь?</b>
+        <b class="videos__title">Все еще сомневаетесь?</b>
           <p class="videos__descriptions">Смотрите видео презентацию и<br>скорее за билетами,пока они не<br>подорожали в очередной раз!
           </p>
+        <div class="videos">
           <div class="videos__clip">
             <div class="video__image-poster"><picture>
               <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
@@ -136,16 +136,25 @@
               <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео" width="320" height="201">
             </picture></div>
             <div class="video__controls">
-              <button class="video__button video__button--replay"><img src="img/icon-video-replay.svg"></button>
-              <div class="video__scroll-bar"></div>
-              <button class="video__button video__button--subtitles"><img src="img/icon-video-subtitles.svg"></button>
-              <button class="video__button video__button--fullscreen"><img src="img/icon-video-fullscreen.svg" alt=""></button>
+              <button class="video__button video__button--replay"><svg class="video__icon video__icon--replay">
+                      <use xlink:href="img/sprite.svg#replay">
+                    </svg></button>
+              <div class="video__scroll-bar">
+                <div class="video__scale"></div>
+                <div class="video__toggle" tabindex="0">
+                </div>
+              </div>
+              <button class="video__button video__button--subtitles"><svg class="video__icon video__icon--subs">
+                      <use xlink:href="img/sprite.svg#subs">
+                    </svg></button>
+              <button class="video__button video__button--fullscreen"><svg class="video__icon video__icon--fullscreen">
+                      <use xlink:href="img/sprite.svg#fullscreen">
+                    </svg></button>
             </div>
             </div>
           </div>
       </section>
-    </section>
-     <footer class="page-footer">
+    <footer class="page-footer">
         <b class="page-footer__hashtag hashtag">#visitSEDONA</b>
         <ul class="social__list">
           <li class="social__item"><a class="social__link social__link--twitter" href="#" aria-label="Мы в Твиттере"></a></li>

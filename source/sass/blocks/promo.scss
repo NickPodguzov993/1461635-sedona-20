@@ -58,15 +58,30 @@
   padding-top: 90px;
   padding-bottom: 85px;
 
+  &::after {
+    bottom: -27px;
+
+   @media (min-width: $tablet-width) {
+    bottom: 0;
+   }
+  }
+
   @media (min-width: $tablet-width) {
 
     padding-top: 77px;
-    padding-bottom: 220px;
+    padding-bottom: 85px;
   }
 
   @media (min-width: $desktop-width) {
 
-    padding-top: 78px;
-    padding-bottom: 90px;
+    padding-top: 77px;
+    padding-bottom: 85px;
+  }
+}
+
+.promo__intro-text {
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
   }
 }

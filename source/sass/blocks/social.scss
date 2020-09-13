@@ -1,15 +1,12 @@
 .social__list {
   @include list-reset();
-}
-
-.social__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-   margin-left: 107px;
-   margin-right: 123px;
+    margin-left: 107px;
+    margin-right: 123px;
   }
 }
 

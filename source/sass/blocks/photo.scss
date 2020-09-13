@@ -16,7 +16,7 @@
 
 .photos__descriptions {
   @include font-set(14px, 24px);
-   margin: 0;
+  margin: 0;
 }
 
 .photos__author {
@@ -82,7 +82,7 @@
     @media (min-width: $desktop-width) {
       background-color: rgba( 0, 0, 0, 0.3);
       color: $white;
-      margin-top: -73px;
+      margin-top: -78px;
     }
   }
 }
@@ -110,7 +110,7 @@
     width: 33.3334%;
   }
 
-   .photos__item--big {
+  .photos__item--big {
     width: 100%;
   }
 }

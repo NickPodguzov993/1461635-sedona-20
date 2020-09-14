@@ -36,7 +36,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -51,7 +51,7 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/.html").on("change", gulp.series(copy, sync.reload));
 }
 
 exports.default = gulp.series(
@@ -59,26 +59,32 @@ exports.default = gulp.series(
 );
 
 const images = () => {
-  return gulp.src("source/img/**/*.{jpg,png,svg}")
+  return gulp.src(["source/img//*{jpg,png,svg}", "!source/img//icon-*.svg"])
      .pipe(imagemin([
           imagemin.optipng({optizationLevel: 3}),
-          imagemin.jpegtran({progressive: true}),
+          imagemin.mozjpeg({progressive: true}),
           imagemin.svgo()
           ]))
+     .pipe(gulp.dest("build/img"))
 }
 
 const webpg = () => {
-  return gulp.src("source/img/**/*.{png,jpg}")
+  return gulp.src("build/img/**/*.{png,jpg}")
      .pipe(webp({quality: 90}))
-     .pipe(gulp.dest("source/img"))
+     .pipe(gulp.dest("build/img"))
 }
 
 exports.webp = webp;
 
 const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
+     .pipe(imagemin([
+    imagemin.svgo({
+        plugins: [
+            {removeAttrs: { attrs: ["fill"] }}]})
+                 ]))
      .pipe(svgstore())
-     .pipe(rename("sprites.svg"))
+     .pipe(rename("sprite.svg"))
      .pipe(gulp.dest("build/img"))
 }
 
@@ -87,7 +93,6 @@ exports.sprite = sprite;
 const copy = () => {
   return gulp.src([
      "source/fonts/**/*.{woff,woff2}",
-     "source/img/**",
      "source/*.ico",
      "source/*.html"
     ], {
@@ -102,13 +107,13 @@ const clean = () => {
   return del("build");
 };
 
-const build = () => gulp.series(
-    "clean",
-    "copy",
-    "css",
-    "sprite",
-    "html"
+const build = gulp.series(
+    clean,
+    gulp.parallel(styles,copy,images,sprite),
+    webpg
   );
+
+exports.build = build;
 
 exports.default = gulp.series(
 build,

@@ -61,9 +61,9 @@
   &::after {
     bottom: -27px;
 
-   @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
     bottom: 0;
-   }
+    }
   }
 
   @media (min-width: $tablet-width) {

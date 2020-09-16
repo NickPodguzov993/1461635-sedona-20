@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-      <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <div class="container">
@@ -50,94 +50,94 @@
       <div class="intro-text"><h1 class="intro-text__title">Фото и видео</h1>
         <p class="intro-text__subtitle">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </div>
-      <section class="photos">
+      <section class="photos photo-item">
         <ul class="photos__list">
           <li class="photos__item photos__item--big">
-            <picture>
+            <a href="#"><picture>
               <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
               <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Просторы" width="280"
             height="280">
-            </picture>
+            </picture> </a>
           <div class="photo-item__footer">
             <div class="photo-item__wrapper"><h2 class="photos__descriptions">Неродные просторы</h2>
             <p class="photos__author">Автор фото: Борис</p>
           </div>
             <button class="photo-item__like">
               <svg class="photo-item__icon">
-                <use xlink:href="img/sprite.svg#icon-like">
+                <use xlink:href="img/sprite.svg#icon-like"></use>
               </svg>
-            <span class="photos-item__counter">1350</span>
+            <span class="photo-item__counter">1350</span>
             </button>
           </div>
           </li>
-            <li class="photos__item"><picture>
+            <li class="photos__item"><a href="#"><picture>
               <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
               <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность" width="280"
             height="280">
-            </picture>
+            </picture></a>
             <div class="photo-item__footer">
             <div class="photo-item__wrapper"><h2 class="photos__descriptions">Местная растительность</h2>
             <p class="photos__author">Автор фото:Сергей</p>
           </div>
             <button class="photo-item__like"><svg class="photo-item__icon">
-                <use xlink:href="img/sprite.svg#icon-like">
+                <use xlink:href="img/sprite.svg#icon-like"></use>
               </svg>
-              <span class="photos-item__counter">143</span>
+              <span class="photo-item__counter">143</span>
             </button>
           </div>
           </li>
-          <li class="photos__item"><picture>
+          <li class="photos__item"><a href=""><picture>
               <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
               <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога" width="280"
             height="280">
-            </picture>
+            </picture></a>
             <div class="photo-item__footer photo-item__footer--road">
             <div class="photo-item__wrapper">
               <h2 class="photos__descriptions">Дорога на север</h2>
             <p class="photos__author">Автор фото:Петр</p>
           </div>
             <button class="photo-item__like"><svg class="photo-item__icon">
-                <use xlink:href="img/sprite.svg#icon-like">
+                <use xlink:href="img/sprite.svg#icon-like"></use>
               </svg>
-            <span class="photos-item__counter">96</span>
+            <span class="photo-item__counter">96</span>
             </button>
           </div>
           </li>
-          <li class="photos__item"><picture>
+          <li class="photos__item"><a href="#"><picture>
               <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
               <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост" width="280"
             height="280">
-            </picture>
+            </picture></a>
             <div class="photo-item__footer">
               <div class="photo-item__wrapper">
                 <h2 class="photos__descriptions">Мост дьявола</h2>
               <p class="photos__author">Автор фото:Антон</p>
             </div>
               <button class="photo-item__like"><svg class="photo-item__icon">
-                <use xlink:href="img/sprite.svg#icon-like">
+                <use xlink:href="img/sprite.svg#icon-like"></use>
               </svg>
-                <span class="photos-item__counter">254</span>
+                <span class="photo-item__counter">254</span>
               </button>
             </div>
           </li>
         </ul>
-        <b class="videos__title">Все еще сомневаетесь?</b>
-          <p class="videos__descriptions">Смотрите видео презентацию и скорее за билетами,пока они не подорожали в очередной раз!
+        <div class="video">
+        <b class="video__title">Все еще сомневаетесь?</b>
+          <p class="video__descriptions">Смотрите видео презентацию и скорее за билетами,пока они не подорожали в очередной раз!
           </p>
-        <div class="videos">
-          <div class="videos__clip">
-            <div class="video__image-poster"><picture>
+          <div class="video__clip">
+            <div class="video__image-poster"><a href="#"><picture>
               <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео" width="320" height="201">
-            </picture></div>
+            </picture></a></div>
             <div class="video__controls">
               <button class="video__button video__button--replay"><svg class="video__icon video__icon--replay">
-                      <use xlink:href="img/sprite.svg#icon-video-replay">
+                      <use xlink:href="img/sprite.svg#icon-video-replay"></use>
                     </svg></button>
               <div class="video__scroll-bar">
                 <div class="video__scale"></div>
@@ -145,18 +145,19 @@
                 </div>
               </div>
               <button class="video__button video__button--subtitles"><svg class="video__icon video__icon--subs">
-                      <use xlink:href="img/sprite.svg#icon-video-subtitles">
+                      <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
                     </svg></button>
               <button class="video__button video__button--fullscreen"><svg class="video__icon video__icon--fullscreen">
-                      <use xlink:href="img/sprite.svg#icon-video-fullscreen">
+                      <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
                     </svg></button>
             </div>
             </div>
           </div>
-      </section>
-    <footer class="page-footer">
+    </section>
+  </section>
+    <footer class="page-footer ">
         <b class="page-footer__hashtag hashtag">#visitSEDONA</b>
-        <ul class="social__list">
+        <ul class="social">
           <li class="social__item"><a class="social__link social__link--twitter" href="#" aria-label="Мы в Твиттере"></a></li>
           <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке"></a></li>
           <li class="social__item"><a class="social__link social__link--youtube" href="#" aria-label="Мы на Ютубе"></a></li>

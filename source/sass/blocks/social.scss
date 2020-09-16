@@ -1,8 +1,17 @@
-.social__list {
+.social {
   @include list-reset();
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  &--form {
+    margin-top: 5px;
+    margin-right: 5px;
+
+    @media (min-width: $desktop-width) {
+     margin-top: 0;
+   }
+  }
 
   @media (min-width: $tablet-width) {
     margin-left: 107px;
@@ -17,7 +26,7 @@
   background-color: $primary-color;
   margin-left: 6px;
   margin-bottom: 46px;
-  margin-top: 33px;
+  margin-top: 30px;
   position: relative;
 }
 
@@ -39,17 +48,17 @@
 .social__link--twitter::after {
   width: 18px;
   height: 15px;
-  background-image: url(../img/twitter.svg);
+  background-image: url("../img/twitter.svg");
 }
 
 .social__link--facebook::after {
   width: 9px;
   height: 19px;
-  background-image: url(../img/facebook.svg);
+  background-image: url("../img/facebook.svg");
 }
 
 .social__link--youtube::after {
   width: 20px;
   height: 14px;
-  background-image: url(../img/youtube.svg);
+  background-image: url("../img/youtube.svg");
 }

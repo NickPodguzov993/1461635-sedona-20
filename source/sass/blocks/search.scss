@@ -1,4 +1,4 @@
-.searsh-apartments__wrapper {
+.searsh-apartments {
   margin-top: 50px;
 
   @media (min-width: $tablet-width) {
@@ -6,7 +6,7 @@
   }
 }
 
-.searsh-apartments__subtitle {
+.searсh-apartments__subtitle {
   @include font-set(14px, 23px);
 
   @media (max-width: $mobile-width-only) {
@@ -18,10 +18,21 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 20px;
-    padding-bottom: 24px;
+    padding-bottom: 22px;
+
+    @include font-set(14px, 26px);
   }
 }
 
-.searsh-apartments__title {
+.searсh-apartments__title {
   @include font-set(21px, 26px);
+
+  @media (min-width: $tablet-width) {
+    @include font-set(30px, 26px);
+
+    display: block;
+    margin-top: 55px;
+
+  }
+
 }

@@ -1,6 +1,6 @@
 .intro-text {
   margin-top: 32px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 
   .intro-text__title {
     @include font-set(18px, 26px);
@@ -20,6 +20,10 @@
   padding-right: 20px;
   padding-bottom: 8px;
 
+  &--form {
+    padding-bottom: 0;
+  }
+
   @media (min-width: $tablet-width) {
     padding-right: 165px;
     padding-left: 160px;
@@ -27,7 +31,7 @@
     &--form {
       padding-left: 130px;
       padding-right: 135px;
-      margin-bottom: 58px;
+      margin-bottom: 66px;
     }
   }
 
@@ -39,7 +43,7 @@
     &--form {
       padding-left: 350px;
       padding-right: 350px;
-      margin-bottom: 32px;
+      margin-bottom: 39px;
     }
   }
 }

@@ -1,73 +1,69 @@
 .main-nav {
   background-color: $primary-color;
   position: relative;
+
   @include font-set(18px, 30px);
 }
 
-  @media (max-width: $mobile-width-only) {
-    .site-list__item {
-      height: 55px;
-      padding-top: 15px;
-      border-top: 1px solid rgba(255, 255, 255, 0.3);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    }
+@media (max-width: $mobile-width-only) {
+  .site-list__item {
+    height: 55px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
 
-    .main-nav__toggle {
-      position: absolute;
-      top: 220px;
-      right: 0;
-      z-index: 2;
-      display: block;
-      width: 70px;
-      height: 50px;
-      background-color: $white;
-      cursor: pointer;
-      border: none;
-    }
+  .main-nav__toggle {
+    position: absolute;
+    top: 220px;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 70px;
+    height: 50px;
+    background-color: $white;
+    cursor: pointer;
+    border: none;
+    display: none;
+  }
 
-    .main-nav--closed .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: 25px;
-  width: 23px;
-  height: 4px;
-  background-color: $primary-color;
-  box-shadow: 0 8px 0 0 $primary-color, 0 16px 0 0 $primary-color;
+  .main-nav--closed .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 23px;
+    height: 4px;
+    background-color: $primary-color;
+    box-shadow: 0 8px 0 0 $primary-color, 0 16px 0 0 $primary-color;
   }
 
   .main-nav--opened .main-nav__toggle {
-  background-color: $primary-color;
-  top: 0;
-  right:0;
+    background-color: $primary-color;
+    top: 0;
+    right: 0;
 
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 18px;
+      width: 36px;
+      height: 3px;
+      background-color: $white;
+    }
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 24px;
-    left: 18px;
-    width: 36px;
-    height: 3px;
-    background-color: $white;
-  }
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
 
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-}
-
-.main-nav__toggle {
-    display: none;
+    &::after {
+      transform: rotate(-45deg);
+    }
   }
 }
-
 
 @media (min-width: $tablet-width) {
   .main-nav {
@@ -76,6 +72,7 @@
 
   a {
     color: $black;
+
     @include font-set(14px, 26px, 700);
   }
 
@@ -100,7 +97,7 @@
 }
 
 @media (min-width: $tablet-width) {
-.site-list__item:nth-child(2) {
-  margin-right: 20%;
-}
+  .site-list__item:nth-child(2) {
+    margin-right: 20%;
+  }
 }

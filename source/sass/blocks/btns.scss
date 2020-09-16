@@ -10,7 +10,7 @@ button {
   @include font-set(21px, 26px);
 }
 
-.search-apartment__btn {
+.searсh-apartments__btn {
   display: block;
   width: 280px;
   padding-top: 14px;
@@ -20,7 +20,7 @@ button {
 }
 
 @media (min-width: $tablet-width) {
-  .search-apartment__btn {
+  .searсh-apartments__btn {
     width: 458px;
     margin-left: 155px;
     margin-bottom: 58px;
@@ -28,7 +28,7 @@ button {
 }
 
 @media (min-width: $desktop-width) {
-  .search-apartment__btn {
+  .searсh-apartments__btn {
     margin-left: 375px;
     margin-top: 20px;
     margin-bottom: 68px;
@@ -52,14 +52,14 @@ button {
 
   @media (min-width: $tablet-width) {
     width: 328px;
-    margin-left: 30px;
+    margin-left: 0;
     margin-top: 40px;
     margin-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
     width: 480px;
-    margin-left: 90px;
+    margin-left: 60px;
     margin-bottom: 70px;
   }
 }

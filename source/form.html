@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-      <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <div class="container">
@@ -46,12 +46,12 @@
       </div>
       <div class="promo"><img src="img/text-sedona.svg" alt="Надпись Седона"></div>
     </header>
-    <section class="review-page">
+    <section class="review">
       <div class="intro-text">
         <h1 class="intro-text__title intro-text__title--form">Оставьте свой отзыв</h1>
         <p class="intro-text__subtitle intro-text__subtitle--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
-      <form class="review__form review-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="review review-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="review-form__item review-form__item--name">
           <legend  class="review-form__legend review-form__legend--intro">Представьтесь:</legend>
           <p class="review-form__initials">
@@ -68,10 +68,10 @@
           </p>
         </fieldset>
         <fieldset class="review-form__item review-form__item--contacts">
-          <legend class="review-form__legend review-form__legend--contacts"><span class="review__contact-info">Контактная информация:</span><legend>
+          <legend class="review-form__legend review-form__legend--contacts"><span class="review__contact-info">Контактная информация:</span></legend>
           <div class="review__contacts">
             <p class="review__contacts-phone">
-            <label for="mail" class="review__label review__label--phone"><span class="review__hide">Контактный</span> телефон*:</label>
+            <label for="tel" class="review__label review__label--phone"><span class="review__hide">Контактный</span> телефон*:</label>
               <input class="review__input review__input--phone" id="tel" type="tel" name="phone" placeholder="Введите телефон">
           </p>
           <p class="review__contacts-mail">
@@ -102,7 +102,7 @@
             <ul class="review-form__wrapper">
             <li class="review__attractions-item review__attractions-item--checkbox">
               <input class="visually-hidden review-form__checkbox" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
-              <label for="мост дьявола" class="review-form__label">Мост Дьявола</label>
+              <label for="devil-bridge" class="review-form__label">Мост Дьявола</label>
             </li>
             <li class="review__attractions-item review__attractions-item--checkbox">
               <input class="visually-hidden review-form__checkbox" type="checkbox" name="mount-bell" id="mount" checked>
@@ -123,12 +123,12 @@
         <textarea class="review-form__textarea"> Опишите подробно все свои восторги</textarea>
         </fieldset>
         <button type="submit" class="review__btn btn">Отправить отзыв</button>
-        <legend class= "review__legend">* - Обязательные поля</legend>
+        <span class= "review__legend">* - Обязательные поля</span>
       </form>
     </section>
       <footer class="page-footer">
           <b class="page-footer__hashtag hashtag">#visitSEDONA</b>
-          <ul class="social__list">
+          <ul class="social social--form">
             <li class="social__item"><a class="social__link social__link--twitter" href="#" aria-label="Мы в Твиттере"></a></li>
             <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке"></a></li>
             <li class="social__item"><a class="social__link social__link--youtube" href="#" aria-label="Мы на Ютубе"></a></li>

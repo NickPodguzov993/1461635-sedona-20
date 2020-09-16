@@ -16,7 +16,7 @@
     content: "";
     width: 27px;
     height: 35px;
-    background-image: url(../img/logo-htmlacademy.svg);
+    background-image: url("../img/logo-htmlacademy.svg");
     background-repeat: no-repeat;
     right: -2px;
     bottom: 20px;
@@ -33,11 +33,11 @@
   }
 
   .page-footer__hashtag {
-    margin-top: 44px;
+    margin-top: 41px;
   }
 
   .page-footer__copyright {
-    margin-top: 44px;
+    margin-top: 41px;
   }
 }
 

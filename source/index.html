@@ -51,14 +51,14 @@
         <h1 class="visually-hidden">Sedona - поиск гостиниц</h1>
         <section class="advantages">
           <h2 class="advantages__title advantages__title--first">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class=" advantages__subtitle--reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <p class="advantages__intro-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           <ol class="advantages__list">
             <li class="advantages__item advantages__item--flex advantages__item--city">
               <div class="advantages__container">
                 <h3 class="advantages__title advantages__title--city">Настоящий городок</h3>
                 <p class="advantages__subtitle advantages__subtitle--reason">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
-              <div class="advantages-container__image">
+              <div class="advantages__container-image">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/main-city-tablet@2x.jpg 2x, img/main-city-tablet@1x.jpg 1x">
@@ -68,17 +68,20 @@
                   <li class="advantages__item advantages__item--apartment">
                     <h4 class="advantages__title advantages__title--sublist ">Жилье</h4>
                     <p class="
-                    advantages__subtitle--house">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                    advantages__second-subtitle
+                    advantages__second-subtitle--house">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                   </li>
                   <li  class="advantages__item advantages__item--souvenirs">
                     <h4 class="advantages__title advantages__title--sublist advantages__title--souvenirs">Сувениры</h4>
                     <p class="
-                      advantages__subtitle--souvenirs">Не только китайского,<br> но и местного производства!</p>
+                    advantages__second-subtitle
+                      advantages__second-subtitle--souvenirs">Не только китайского,<br> но и местного производства!</p>
                   </li>
                   <li  class="advantages__item advantages__item--food">
                     <h4 class="advantages__title advantages__title--sublist advantages__title--food">Еда</h4>
                     <p class="
-                      advantages__subtitle--food">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+                    advantages__second-subtitle
+                      advantages__second-subtitle--food">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
                   </li>
                 </ul>
               </li>
@@ -87,7 +90,7 @@
                   <h3 class="advantages__title advantages__title--bridge">Там&nbsp;есть Мост&nbsp;дьявола</h3>
                   <p class="advantages__subtitle advantages__subtitle--bridge">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
-                <div class="advantages-container__image">
+                <div class="advantages__container-image">
                   <picture>
                     <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
@@ -108,18 +111,18 @@
               </li>
             </ol>
           </section>
-          <div class="searsh-apartments__wrapper">
-            <b class="searsh-apartments__title">Заинтересовались?</b>
-            <p class="searsh-apartments__subtitle">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в седонe</p>
-            <a href="#" class="search-apartment__btn btn">Найти гостиницу</a>
+          <div class="searсh-apartments">
+            <b class="searсh-apartments__title">Заинтересовались?</b>
+            <p class="searсh-apartments__subtitle">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в седонe</p>
+            <a href="search-hotel.html" class="searсh-apartments__btn btn">Найти гостиницу</a>
           </div>
           <div class="map">
-            <iframe class="map__sedona" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250297.1130303266!2d-113.16751654142827!3d34.983524002709586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1599836569786!5m2!1sru!2sru" width="320" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe class="map__sedona" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250297.1130303266!2d-113.16751654142827!3d34.983524002709586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1599836569786!5m2!1sru!2sru" width="320" height="350" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
         </main>
         <footer class="page-footer">
           <b class="page-footer__hashtag hashtag">#visitSEDONA</b>
-          <ul class="social__list">
+          <ul class="social">
             <li class="social__item"><a class="social__link social__link--twitter" href="#" aria-label="Мы в Твиттере"></a></li>
             <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке"></a></li>
             <li class="social__item"><a class="social__link social__link--youtube" href="#" aria-label="Мы на Ютубе"></a></li>
@@ -129,5 +132,6 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
           </div>
         </footer>
+       </div>
       </body>
     </html>

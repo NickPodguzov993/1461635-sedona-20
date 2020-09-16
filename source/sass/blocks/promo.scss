@@ -1,4 +1,5 @@
-.promo, .promo--index {
+.promo,
+.promo--index {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -30,20 +31,16 @@
     @media (min-width: $desktop-width) {
       background-image: url("../img/bg-intro-triangle-desktop.svg");
     }
-
-
   }
 
   @media (min-resolution: 2dppx) {
-      background-image: url("../img/bg-back-mobile@2x.jpg");
-
-    }
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     padding-top: 95px;
     padding-bottom: 105px;
-
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -60,28 +57,28 @@
     }
   }
 }
+
 .promo--index {
   padding-top: 90px;
-  padding-bottom: 85px;
+  padding-bottom: 80px;
 
+  .promo__intro-text {
+    @media (max-width: $mobile-width-only) {
+      width: 282px;
+      height: 214px;
+    }
 
-.promo__intro-text {
-  @media (max-width: $mobile-width-only){
-    width: 282px;
-    height: 214px;
+    @media (min-width: $tablet-width) {
+      width: 461px;
+      height: 350px;
+    }
   }
-
-  @media (min-width: $tablet-width) {
-    width: 461px;
-    height: 350px;
-  }
-}
 
   &::after {
     bottom: -32px;
 
     @media (min-width: $tablet-width) {
-    bottom: 0;
+      bottom: 0;
     }
   }
 

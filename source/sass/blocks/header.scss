@@ -1,6 +1,6 @@
 .page-header__wrapper {
   @media (max-width: $mobile-width-only) {
-  height: 57px;
+    height: 57px;
   }
 }
 
@@ -13,9 +13,9 @@
   z-index: 1;
 
 
-img {
-  width: 100%;
-}
+  img {
+    width: 100%;
+  }
 
   @media (min-width: $tablet-width) {
     top: 0;

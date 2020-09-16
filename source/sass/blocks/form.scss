@@ -4,20 +4,25 @@
   padding-top: 16px;
   margin: 0;
 
-&--contacts {
-  padding-bottom: 0px;
-  padding-top: 0px;
+  &--contacts {
+    padding-bottom: 0px;
+    padding-top: 0px;
 
-  @media (min-width: $tablet-width) {
-    margin-top: 0px;
+    @media (min-width: $tablet-width) {
+      margin-top: 0px;
+    }
   }
-}
 
   &--name {
     margin-left: 40px;
     @media (max-width: $mobile-width-only) {
       margin-left: 0;
     }
+
+     @media (min-width: $tablet-width) {
+      margin-left: 39px;
+      padding-right: 0;
+     }
   }
 
   &--impression {
@@ -62,39 +67,43 @@
   @media (min-width: $tablet-width) {
     @include font-set(21px, 26px, 700);
     margin-bottom: 39px;
-    margin-left: 15px;
+    margin-left: 0;
     text-align: start;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 9px;
     margin-left: 30px;
-    padding-left: 140px;
+    padding-left: 110px;
   }
 
-    &--contacts {
-      position: relative;
+  &--contacts {
+    position: relative;
 
-      &::before {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+
+    &::before {
       position: absolute;
       content: "";
-      background-color: #E5E5E5;
+      background-color: #e5e5e5;
       width: 123px;
       height: 2px;
       top: 49px;
-      left: 540px;
+      left: 385px;
 
       @media (min-width: $desktop-width) {
         width: 280px;
-        top: 269px;
-        left: 70px;
+        top: 270px;
+        left: -240px;
       }
     }
 
     @media (min-width: $tablet-width) {
-    text-align: center;
-    padding-left: 10px;
-    padding-top: 40px;
+      text-align: center;
+      padding-left: 10px;
+      padding-top: 40px;
     }
   }
 
@@ -103,31 +112,35 @@
     margin-left: 0;
     position: relative;
 
+    @media (min-width: $tablet-width) {
+      margin-left: 5px;
+    }
+
     &::before {
       position: absolute;
       content: "";
-      background-color: #E5E5E5;
+      background-color: #e5e5e5;
       width: 320px;
       height: 2px;
       top: -9px;
       left: -90px;
 
-    @media (min-width: $tablet-width) {
-      width: 123px;
-      height: 2px;
-      top: 391px;
-      left: -375px;
+      @media (min-width: $tablet-width) {
+        width: 123px;
+        height: 2px;
+        top: 393px;
+        left: -380px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 391px;
+        left: -455px;
+        width: 280px;
+      }
     }
 
     @media (min-width: $desktop-width) {
-      top: 391px;
-      left: -425px;
-      width: 280px;
-    }
-  }
-
-    @media (min-width: $desktop-width) {
-      margin-left: -110px;
+      margin-left: -80px;
       margin-bottom: 40px;
     }
   }
@@ -137,13 +150,13 @@
   }
 
   &--emotions {
-  padding-top: 7px;
-  position: relative;
+    padding-top: 7px;
+    position: relative;
 
-  &::before {
+    &::before {
       position: absolute;
       content: "";
-      background-color: #E5E5E5;
+      background-color: #e5e5e5;
       width: 320px;
       height: 2px;
       top: -16px;
@@ -159,33 +172,33 @@
       @media (min-width: $desktop-width) {
         width: 280px;
         top: 32px;
-        left: 50px;
+        left: 20px;
       }
     }
 
     @media (min-width: $tablet-width) {
       padding-top: 22px;
-      padding-left: 200px;
+      padding-left: 185px;
 
       &::after {
-      position: absolute;
-      content: "";
-      background-color: #E5E5E5;
-      width: 123px;
-      height: 2px;
-      top: 34px;
-      left: 525px;
+        position: absolute;
+        content: "";
+        background-color: #E5E5E5;
+        width: 123px;
+        height: 2px;
+        top: 34px;
+        left: 525px;
 
-      @media (min-width: $desktop-width) {
-        width: 280px;
-        top: 33px;
-        left: 725px;
+        @media (min-width: $desktop-width) {
+          width: 280px;
+          top: 33px;
+          left: 700px;
+        }
       }
     }
-  }
 
     @media (min-width: $desktop-width) {
-      padding-left: 402px;
+      padding-left: 372px;
       padding-bottom: 30px;
     }
   }
@@ -200,24 +213,24 @@
   position: relative;
 
   &::before {
-      position: absolute;
-      content: "";
-      background-color: #E5E5E5;
-      width: 320px;
-      height: 2px;
+    position: absolute;
+    content: "";
+    background-color: #E5E5E5;
+    width: 320px;
+    height: 2px;
       top: -9px;
       left: 0px;
 
       @media (min-width: $tablet-width) {
         width: 2px;
         height: 292px;
-        top: 25px;
-        left: 354px;
+        top: 20px;
+        left: 322px;
       }
 
       @media (min-width: $desktop-width) {
         top: 23px;
-        left: 570px;
+        left: 540px;
       }
     }
 }
@@ -233,6 +246,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 20px;
+    margin-left: 0;
   }
 }
 
@@ -249,11 +263,199 @@
 
   .review-form__textarea {
     width: 648px;
+    padding-left: 0px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .review-form__textarea {
     width: 960px;
+    padding-left: 10px;
   }
+}
+
+.review-form__label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.review-form__checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -75px;
+  top: -10px;
+  width: 46px;
+  height: 46px;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    left: -75px;
+  }
+}
+
+.review-form__checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -64px;
+  width: 23px;
+  height: 16px;
+  background-image: url("../img/tick.svg");
+
+  @media (min-width: $tablet-width) {
+    left: -64px;
+  }
+}
+
+.review-form__radio + label::before {
+  content: "";
+  position: absolute;
+  left: -46px;
+  top: -15px;
+  width: 54px;
+  height: 54px;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: -76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -70px;
+  }
+}
+
+.review-form__radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -29px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: $black;
+
+  @media (min-width: $tablet-width) {
+    left: -59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -54px;
+  }
+}
+
+.review-form__textarea {
+  background-color: #f2f2f2;
+  resize: none;
+  border: none;
+}
+
+.review-form__list {
+  padding-left: 55px;
+  padding-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 35px;
+  }
+}
+
+.review-form__initials {
+  margin-top: 0;
+  margin-left: 5px;
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 27px;
+  }
+}
+
+.review-form__item--contacts {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.review-form__item--radio {
+  padding-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    margin-top: 12px;
+    margin-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 112px;
+  }
+}
+
+.review-form__legend--checkbox {
+  padding-bottom: 38px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: #e5e5e5;
+    width: 320px;
+    height: 2px;
+    top: -4px;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 123px;
+      height: 2px;
+      top: 76px;
+      left: -170px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 280px;
+      top: -179px;
+      left: 350px;
+      height: 2px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 308px;
+    text-align: center;
+    padding-top: 47px;
+    padding-bottom: 20px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: #e5e5e5;
+      width: 123px;
+      height: 2px;
+      top: 76px;
+      left: 355px;
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+        top: 44px;
+        left: 355px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+}
+
+.review-form__item--attractions {
+  padding: 0;
+  margin-top: 3px;
 }

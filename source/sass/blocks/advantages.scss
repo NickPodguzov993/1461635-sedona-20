@@ -308,7 +308,7 @@
         width: 320px;
         height: 37px;
         background-image: url("../img/bg-triangle.svg");
-        top: -48px;
+        top: -69px;
         left: 0;
       }
     }
@@ -441,9 +441,18 @@
   .advantages__container-image {
     width: 66.6667%;
     height: 256px;
+    overflow: hidden;
 
     img {
       width: 100%;
+      top: -70px;
+      position: relative;
+    }
+
+    &--bridge {
+      img {
+        top: -10px;
+      }
     }
   }
 

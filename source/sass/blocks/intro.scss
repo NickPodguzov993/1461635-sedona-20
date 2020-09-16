@@ -4,6 +4,12 @@
 
   .intro-text__title {
     @include font-set(18px, 26px);
+
+    @media (min-width: $desktop-width) {
+      &--form {
+        margin-top: 112px;
+      }
+    }
   }
 }
 
@@ -13,4 +19,27 @@
   padding-left: 25px;
   padding-right: 20px;
   padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 165px;
+    padding-left: 160px;
+
+    &--form {
+      padding-left: 130px;
+      padding-right: 135px;
+      margin-bottom: 58px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 380px;
+    padding-left: 380px;
+    padding-top: 7px;
+
+    &--form {
+      padding-left: 350px;
+      padding-right: 350px;
+      margin-bottom: 32px;
+    }
+  }
 }

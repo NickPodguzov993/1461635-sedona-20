@@ -21,3 +21,7 @@
     padding-bottom: 24px;
   }
 }
+
+.searsh-apartments__title {
+  @include font-set(21px, 26px);
+}

@@ -1,9 +1,24 @@
 .review-form__item {
   border: none;
-  padding-bottom: 43px;
+  padding-bottom: 13px;
   padding-top: 16px;
   margin: 0;
 
+&--contacts {
+  padding-bottom: 0px;
+  padding-top: 0px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0px;
+  }
+}
+
+  &--name {
+    margin-left: 40px;
+    @media (max-width: $mobile-width-only) {
+      margin-left: 0;
+    }
+  }
 
   &--impression {
     @media (min-width: $tablet-width) {
@@ -43,17 +58,182 @@
   @include font-set(18px, 26px, 700);
 
   padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(21px, 26px, 700);
+    margin-bottom: 39px;
+    margin-left: 15px;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 9px;
+    margin-left: 30px;
+    padding-left: 140px;
+  }
+
+    &--contacts {
+      position: relative;
+
+      &::before {
+      position: absolute;
+      content: "";
+      background-color: #E5E5E5;
+      width: 123px;
+      height: 2px;
+      top: 49px;
+      left: 540px;
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+        top: 269px;
+        left: 70px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 40px;
+    }
+  }
+
+
+  &--intro {
+    margin-left: 0;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: #E5E5E5;
+      width: 320px;
+      height: 2px;
+      top: -9px;
+      left: -90px;
+
+    @media (min-width: $tablet-width) {
+      width: 123px;
+      height: 2px;
+      top: 391px;
+      left: -375px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 391px;
+      left: -425px;
+      width: 280px;
+    }
+  }
+
+    @media (min-width: $desktop-width) {
+      margin-left: -110px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &--contacts {
+    margin-top: 50px;
+  }
+
+  &--emotions {
+  padding-top: 7px;
+  position: relative;
+
+  &::before {
+      position: absolute;
+      content: "";
+      background-color: #E5E5E5;
+      width: 320px;
+      height: 2px;
+      top: -16px;
+      left: -50px;
+
+      @media (min-width: $tablet-width) {
+        width: 123px;
+        height: 2px;
+        top: 34px;
+        left: 0;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+        top: 32px;
+        left: 50px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 22px;
+      padding-left: 200px;
+
+      &::after {
+      position: absolute;
+      content: "";
+      background-color: #E5E5E5;
+      width: 123px;
+      height: 2px;
+      top: 34px;
+      left: 525px;
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+        top: 33px;
+        left: 725px;
+      }
+    }
+  }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 402px;
+      padding-bottom: 30px;
+    }
+  }
 }
+
 
 .review-form__initials {
   display: flex;
 }
 
+.review-form__item--impression {
+  position: relative;
+
+  &::before {
+      position: absolute;
+      content: "";
+      background-color: #E5E5E5;
+      width: 320px;
+      height: 2px;
+      top: -9px;
+      left: 0px;
+
+      @media (min-width: $tablet-width) {
+        width: 2px;
+        height: 292px;
+        top: 25px;
+        left: 354px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 23px;
+        left: 570px;
+      }
+    }
+}
+
 .review-form__textarea {
   width: 279px;
   height: 160px;
+  padding-top: 12px;
+  padding-left: 10px;
+  padding-right:10px;
 
   @include font-set(18px, 26px, 700);
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
 }
 
 .review-form__label {

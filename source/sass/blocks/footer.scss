@@ -18,7 +18,8 @@
     height: 35px;
     background-image: url(../img/logo-htmlacademy.svg);
     background-repeat: no-repeat;
-    right: 0;
+    right: -2px;
+    bottom: 20px;
   }
 }
 
@@ -37,5 +38,19 @@
 
   .page-footer__copyright {
     margin-top: 44px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding: 0 120px;
+  }
+
+  .page-footer__hashtag {
+    margin-top: 40px;
+  }
+
+  .page-footer__copyright {
+    margin-top: 40px;
   }
 }

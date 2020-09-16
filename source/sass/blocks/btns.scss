@@ -29,7 +29,9 @@ button {
 
 @media (min-width: $desktop-width) {
   .search-apartment__btn {
-    margin-left: 371px;
+    margin-left: 375px;
+    margin-top: 20px;
+    margin-bottom: 68px;
   }
 }
 
@@ -42,14 +44,22 @@ button {
 .review__btn {
   width: 280px;
   height: 58px;
+  margin-top: 30px;
+  margin-bottom: 43px;
+  text-transform: inherit;
+
+  @include font-set(18px, 26px, 700);
 
   @media (min-width: $tablet-width) {
     width: 328px;
-    margin-left: 60px;
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
     width: 480px;
-    margin-left: 120px;
+    margin-left: 90px;
+    margin-bottom: 70px;
   }
 }

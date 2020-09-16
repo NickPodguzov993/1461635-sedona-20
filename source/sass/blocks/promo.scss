@@ -2,9 +2,15 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 55px;
+  padding-bottom: 57px;
   position: relative;
+
+  img {
+    @media (max-width: $mobile-width-only) {
+      width: 229px;
+    }
+  }
 
   &::after {
     position: absolute;
@@ -58,8 +64,21 @@
   padding-top: 90px;
   padding-bottom: 85px;
 
+
+.promo__intro-text {
+  @media (max-width: $mobile-width-only){
+    width: 282px;
+    height: 214px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
+}
+
   &::after {
-    bottom: -27px;
+    bottom: -32px;
 
     @media (min-width: $tablet-width) {
     bottom: 0;
@@ -73,7 +92,6 @@
   }
 
   @media (min-width: $desktop-width) {
-
     padding-top: 77px;
     padding-bottom: 85px;
   }

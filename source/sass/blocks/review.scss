@@ -1,6 +1,8 @@
 .review-page {
+  padding-top: 5px;
+
   @media (min-width: $tablet-width) {
-    padding: 0 60px;
+    padding: 0 30px;
 
     @media (min-width: $desktop-width) {
       padding: 0 30px;
@@ -8,20 +10,69 @@
   }
 }
 
+.review-form__item--attractions {
+  padding: 0;
+}
+
 .review__attractions-item {
   padding-bottom: 54px;
+  margin-top: 0;
+  text-align: start;
+  padding-left: 100px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 179px;
+    padding-left: 205px;
+    padding-bottom: 62px;
+
+    &:nth-child(even) {
+      padding-left: 149px;
+    }
+
+    &:last-child {
+      padding-left: 169px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 170px;
+    padding-top: 30px;
+
+    &:nth-child(3) {
+      padding-left: 150px;
+    }
+
+    &:last-child {
+      padding-left: 149px;
+    }
   }
 }
 
 .review__label {
-  @include font-set(14px, 26px,);
+  @include font-set(14px, 26px, 500);
   padding-top: 20px;
+
+  &--phone {
+    padding-top: 0px;
+    margin-top: 0;
+    display: block;
+    @include font-set(14px, 26px);
+
+    text-align: start;
+    margin-left: 29px;
+    padding-bottom: 5px;
+  }
+
+  &--mail {
+    display: block;
+    padding-top: 0px;
+    text-align: start;
+    margin-left: 29px;
+    padding-bottom: 2px;
+  }
 }
 
 .review__contacts {
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
@@ -30,21 +81,34 @@
 
 .review__contacts-phone {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+    margin-bottom: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-left: 60px;
+    margin-top: 70px;
+  }
+
   &::before {
     position: absolute;
     content: "";
     width: 58px;
     height: 58px;
     background-color: #E6E6E6;
-    top: 26px;
-    left: 265px;
+    top: 36px;
+    left: 199px;
 
     @media (min-width: $tablet-width) {
-      left: 605px;
+      left: 590px;
     }
 
     @media (min-width: $desktop-width) {
-      left: 272px;
+      left: 342px;
+      top: 0;
     }
   }
 
@@ -53,16 +117,17 @@
     content: "";
     width: 18px;
     height: 18px;
-    background-image: url(../img/icon-phone.svg);
-    top: 46px;
-    left: 280px;
+    background-image: url(../img/phone.svg);
+    top: 53px;
+    left: 220px;
 
     @media (min-width: $tablet-width) {
-      left: 625px;
+      left: 611px;
     }
 
     @media (min-width: $desktop-width) {
-      left: 290px;
+      left: 365px;
+      top: 20px;
     }
   }
 }
@@ -70,21 +135,32 @@
 .review__contacts-mail {
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-left: 115px;
+    margin-top: 70px;
+  }
+
   &::before {
     position: absolute;
     content: "";
     width: 58px;
     height: 58px;
     background-color: #E6E6E6;
-    top: 26px;
-    left: 265px;
+    top: 28px;
+    left: 199px;
 
     @media (min-width: $tablet-width) {
-      left: 605px;
+      left: 590px;
     }
 
     @media (min-width: $desktop-width) {
-      left: 575px;
+      left: 446px;
+      top: 0;
     }
   }
 
@@ -93,21 +169,19 @@
     content: "";
     width: 16px;
     height: 12px;
-    background-image: url(../img/icon-mail.svg);
+    background-image: url(../img/mail.svg);
     top: 46px;
-    left: 284px;
+    left: 221px;
 
     @media (min-width: $tablet-width) {
-      left: 625px;
+      left: 611px;
+      top: 49px;
     }
 
     @media (min-width: $desktop-width) {
-      left: 595px;
+      left: 467px;
+      top: 22px;
     }
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 302px;
   }
 }
 
@@ -117,7 +191,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-left: 132px;
+    margin-left: 163px;
+    margin-top: 61px;
+    @include font-set(14px, 20px);
   }
 
   @media (min-width: $desktop-width) {
@@ -127,11 +203,13 @@
 
 .review__input {
   padding-left: 22px;
+  padding-top: 10px;
   height: 58px;
-  flex-grow: 1;
   margin-left: 15px;
   background-color: $secondary-color;
   border: none;
+
+  @include font-set(16px, 20px, 700);
 
   &--name {
     width: 230px;
@@ -169,17 +247,18 @@
     }
   }
 
-  @include font-set(18px, 26px, 700);
-
   @media (min-width: $tablet-width) {
     display: block;
   }
 
   &--phone {
     width: 222px;
+    margin-left: -23px;
+    display: block;
 
     @media (min-width: $tablet-width) {
       width: 590px;
+      margin-left: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -189,9 +268,15 @@
 
   &--mail {
     width: 222px;
+    margin-left: -23px;
+    display: block;
+    margin-bottom: 33px;
 
     @media (min-width: $tablet-width) {
       width: 590px;
+      margin-left: 0;
+      margin-bottom: 0px;
+      padding-top: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -211,8 +296,8 @@
 .review-form__checkbox + label::before {
   content: "";
   position: absolute;
-  left: 30px;
-  top: 0;
+  left: -75px;
+  top: -10px;
   width: 46px;
   height: 46px;
   border: none;
@@ -220,52 +305,60 @@
   border-radius: 3px;
 
   @media (min-width: $tablet-width) {
-    left: -60px;
+    left: -75px;
   }
 }
 
 .review-form__checkbox:checked + label::after {
   content: "";
   position: absolute;
-  top: 14px;
-  left: 40px;
+  top: 3px;
+  left: -64px;
   width: 23px;
   height: 16px;
-  background-image: url(../img/icon-tick.svg);
+  background-image: url(../img/tick.svg);
 
   @media (min-width: $tablet-width) {
-    left: -50px;
+    left: -64px;
   }
 }
 
 .review-form__radio + label::before {
   content: "";
   position: absolute;
-  left: 0px;
-  top: -10px;
-  width: 48px;
-  height: 48px;
+  left: -46px;
+  top: -15px;
+  width: 54px;
+  height: 54px;
   border: none;
   background-color: #F2F2F2;
   border-radius: 50%;
 
+  @media (min-width: $tablet-width) {
+    left: -76px;
+  }
+
   @media (min-width: $desktop-width) {
-    left: 140px;
+    left: -70px;
   }
 }
 
 .review-form__radio:checked + label::after {
     content: "";
   position: absolute;
-  top: 4px;
-  left: 15px;
-  width: 18px;
-  height: 18px;
+  top: 2px;
+  left: -29px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: $black;
 
+  @media (min-width: $tablet-width) {
+    left: -59px;
+  }
+
   @media (min-width: $desktop-width) {
-    left: 155px;
+    left: -54px;
   }
 }
 
@@ -273,4 +366,151 @@
   background-color: #F2F2F2;
   resize: none;
   border: none;
+}
+
+.review-form__list {
+  padding-left: 55px;
+  padding-top: 5px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 35px;
+  }
+}
+
+.review-form__initials {
+  margin-top: 0px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 27px;
+  }
+}
+
+.review-form__item--contacts {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.review__label--phone {
+  text-align: start;
+  margin-left: 0;
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    margin-left: 0px;
+    margin-right: 15px;
+    margin-top: 20px;
+  }
+}
+
+.review__label--mail {
+  margin-left: -3px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+    margin-top: 19px;
+  }
+}
+
+.review-form__item--radio {
+  padding-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    margin-top: 12px;
+    margin-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 112px;
+  }
+}
+
+.review-form__item--attractions {
+  margin-top: 3px;
+}
+
+.review-form__legend--checkbox {
+  padding-bottom: 38px;
+  position: relative;
+
+  &::before {
+      position: absolute;
+      content: "";
+      background-color: #E5E5E5;
+      width: 320px;
+      height: 2px;
+      top: -4px;
+      left: 0px;
+
+      @media (min-width: $tablet-width) {
+        width: 123px;
+        height: 2px;
+        top: 36px;
+        left: -170px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+        top: -190px;
+        left: 350px;
+        height: 2px;
+      }
+    }
+
+  @media (min-width: $tablet-width) {
+    width: 308px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: #E5E5E5;
+      width: 123px;
+      height: 2px;
+      top: 34px;
+      left: 355px;
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+        top: 34px;
+        left: 355px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+
+  }
+}
+
+.review__contact-info {
+  @media (min-width: $tablet-width) {
+    padding-left: 55px;
+    padding-top: 0;
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 114px;
+  }
+}
+
+.review__hide {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

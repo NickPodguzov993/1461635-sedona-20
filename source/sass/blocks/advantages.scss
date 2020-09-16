@@ -442,20 +442,25 @@
     width: 66.6667%;
     height: 256px;
     overflow: hidden;
-
     img {
       width: 100%;
-      top: -70px;
-      position: relative;
     }
 
-    &--bridge {
+
+    @media (min-width: $desktop-width) {
       img {
-        top: -10px;
+        width: 100%;
+        top: -70px;
+        position: relative;
+      }
+
+      &--bridge {
+        img {
+          top: -10px;
+        }
       }
     }
   }
-
   .advantages__item--wrapper {
     width: 33.3334%;
   }

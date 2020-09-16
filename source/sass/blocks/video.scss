@@ -48,9 +48,9 @@
   position: relative;
   margin-bottom: 75px;
 
-   @media (min-width: $tablet-width) {
-   margin-bottom: 38px;
-   }
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+  }
 }
 
 .video__image-poster {
@@ -153,6 +153,7 @@
 
   @media (min-width: $tablet-width) {
     grid-row-start: 1;
+    z-index: 1;
   }
 
   &--replay {

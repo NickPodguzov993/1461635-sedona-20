@@ -61,7 +61,6 @@
     @include font-set(14px, 26px);
 
     text-align: start;
-    margin-left: 0;
     padding-bottom: 10px;
     margin-left: 30px;
 
@@ -309,9 +308,6 @@
     }
   }
 }
-
-
-
 
 .review__contact-info {
   @media (min-width: $tablet-width) {

@@ -11,18 +11,18 @@
 }
 
 .advantages__intro-text {
-    padding: 6px 20px 20px;
+  padding: 6px 20px 20px;
 
-    @media (min-width: $tablet-width) {
-      margin-bottom: 35px;
-    }
-
-    @include font-set(14px, 24px);
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 25px;
-    }
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
   }
+
+  @include font-set(14px, 24px);
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+  }
+}
 
 .advantages__subtitle {
   margin: 0;
@@ -43,12 +43,14 @@
   &--reason {
     padding-top: 14px;
     padding-bottom: 36px;
+
     @include font-set(14px, 24px);
 
     @media (min-width: $tablet-width) {
       padding-right: 30px;
       padding-left: 30px;
       padding-top: 10px;
+
       @include font-set(14px, 22px);
     }
 
@@ -66,6 +68,7 @@
       padding-left: 51px;
       padding-right: 51px;
       padding-top: 3px;
+
       @include font-set(14px, 22px);
     }
 
@@ -85,6 +88,7 @@
       padding-top: 10px;
       padding-right: 55px;
       padding-left: 55px;
+
       @include font-set(14px, 22px);
     }
 
@@ -127,6 +131,7 @@
 
     @media (min-width: $tablet-width) {
       padding-top: 15px;
+
       @include font-set(14px, 22px);
     }
 
@@ -168,55 +173,53 @@
 
   &--souvenirs {
     padding-right: 15px;
-  padding-left: 25px;
-
-  br {
-    display: none;
-  }
-
-  @include font-set(14px, 20px);
-
-  @media (min-width: $tablet-width) {
-    padding-top: 0;
-    padding-right: 30px;
-    padding-left: 34px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 244px;
-    padding-right: 0;
-    padding-left: 0;
-    margin-left: 77px;
-    text-align: center;
+    padding-left: 25px;
 
     br {
-      display: inline;
+      display: none;
+    }
+
+    @include font-set(14px, 20px);
+
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+      padding-right: 30px;
+      padding-left: 34px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 244px;
+      padding-right: 0;
+      padding-left: 0;
+      margin-left: 77px;
+      text-align: center;
+
+      br {
+        display: inline;
+      }
     }
   }
- }
 
   &--food {
     @include font-set(14px, 20px);
 
-  padding-right: 45px;
-  padding-left: 25px;
+    padding-right: 45px;
+    padding-left: 25px;
 
-  @media (min-width: $tablet-width) {
-    padding-top: 0;
-    padding-right: 25px;
-    padding-left: 0;
-    width: 180px;
-    margin-left: 37px;
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+      padding-right: 25px;
+      padding-left: 0;
+      width: 180px;
+      margin-left: 37px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 313px;
+      margin-left: 43px;
+    }
   }
-
-   @media (min-width: $desktop-width) {
-    width: 313px;
-    margin-left: 43px;
-   }
 }
-}
-
-
 
 .advantages__sublist {
   background-color: $white;

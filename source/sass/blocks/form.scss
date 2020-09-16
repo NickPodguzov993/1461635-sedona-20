@@ -5,24 +5,25 @@
   margin: 0;
 
   &--contacts {
-    padding-bottom: 0px;
-    padding-top: 0px;
+    padding-bottom: 0;
+    padding-top: 0;
 
     @media (min-width: $tablet-width) {
-      margin-top: 0px;
+      margin-top: 0;
     }
   }
 
   &--name {
     margin-left: 40px;
+
     @media (max-width: $mobile-width-only) {
       margin-left: 0;
     }
 
-     @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       margin-left: 39px;
       padding-right: 0;
-     }
+    }
   }
 
   &--impression {
@@ -183,7 +184,7 @@
       &::after {
         position: absolute;
         content: "";
-        background-color: #E5E5E5;
+        background-color: #e5e5e5;
         width: 123px;
         height: 2px;
         top: 34px;
@@ -215,24 +216,24 @@
   &::before {
     position: absolute;
     content: "";
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
     width: 320px;
     height: 2px;
-      top: -9px;
-      left: 0px;
+    top: -9px;
+    left: 0;
 
-      @media (min-width: $tablet-width) {
-        width: 2px;
-        height: 292px;
-        top: 20px;
-        left: 322px;
-      }
-
-      @media (min-width: $desktop-width) {
-        top: 23px;
-        left: 540px;
-      }
+    @media (min-width: $tablet-width) {
+      width: 2px;
+      height: 292px;
+      top: 20px;
+      left: 322px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 23px;
+      left: 540px;
+    }
+  }
 }
 
 .review-form__textarea {
@@ -240,7 +241,7 @@
   height: 160px;
   padding-top: 12px;
   padding-left: 10px;
-  padding-right:10px;
+  padding-right: 10px;
 
   @include font-set(18px, 26px, 700);
 
@@ -263,7 +264,7 @@
 
   .review-form__textarea {
     width: 648px;
-    padding-left: 0px;
+    padding-left: 0;
   }
 }
 

@@ -248,7 +248,7 @@
   padding-top: 12px;
   padding-left: 10px;
   padding-right: 10px;
-  font-family: "PT Sans";
+  font-family: $font-family;
 
   @include font-set(18px, 26px, 700);
 
